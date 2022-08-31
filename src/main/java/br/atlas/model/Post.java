@@ -11,7 +11,7 @@ public class Post {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToMany(mappedBy = "produtos_list")
+    @ManyToMany(mappedBy = "post_list")
     private Set<Social> social_list;
 
     public Long getId() {
