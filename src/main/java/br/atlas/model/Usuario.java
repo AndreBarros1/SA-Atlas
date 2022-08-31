@@ -68,10 +68,6 @@ public class Usuario {
         return social;
     }
 
-    public void setSocial(Social social) {
-        this.social = social;
-    }
-
     @Override
     public String toString() {
         return "Usuario{" +

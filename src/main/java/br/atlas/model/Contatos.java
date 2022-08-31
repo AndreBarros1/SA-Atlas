@@ -66,9 +66,7 @@ public class Contatos {
         return social;
     }
 
-    public void setSocial(Social social) {
-        this.social = social;
-    }
+
 
     @Override
     public String toString() {
