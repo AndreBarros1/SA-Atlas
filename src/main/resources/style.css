@@ -137,7 +137,8 @@
   }
   
   .my-2 {
-    margin-top: 16px;
+    margin-left: 80px;
+    margin-top: 32px;
     margin-bottom: 16px;
   }
   
@@ -277,7 +278,8 @@
   }
   
   .px-1 {
-    padding-left: 8px;
+    padding-top: 80px;
+    padding-left: 80px;
     padding-right: 8px;
   }
   
@@ -300,7 +302,39 @@
     padding-left: 72px;
     padding-right: 72px;
   }
+
+/* -- */
+
+  .px-6 {
+    max-width: 250px;
+    padding-top: 10px;
+    padding-left: 90px;
+    padding-right: 8px;
+    display: flex;
+    margin-left:300px;
+  }
+
+  .pxx-1{
+
+    margin-left: 90px ;
+  }
+
+
+  /* .px-7 {
+    max-width: 250px;
+    padding-top: 10px;
+    padding-left: 90px;
+    padding-right: 8px;
+  }
+
+  .px-8 {
+    max-width: 250px;
+    padding-top: 10px;
+    padding-left: 90px;
+    padding-right: 8px;
+  } */
   
+  /* -- */
   .py-1 {
     padding-top: 8px;
     padding-bottom: 8px;
@@ -332,6 +366,10 @@
     background-color: #0A0C10;
   }
   
+  ::-webkit-scrollbar {
+    display: none;
+    }
+
   img, svg {
     display: block;
     width: 100%;
@@ -373,6 +411,36 @@
   
   @media screen and (max-width: 960px) {
     #container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      height: auto;
+      overflow: hidden;
+    }
+  }
+
+  #containerr {
+    background-color: #000000;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 36px 16px;
+    overflow: none;
+    height: 85vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  @media screen and (max-width: 960px) {
+    #containerr {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
@@ -427,6 +495,8 @@
   }
   
   .btn {
+    margin-top: 25px;
+    margin-left: 80px;
     display: inline-block;
     padding: 12px 32px;
     border-radius: 3px;
@@ -611,6 +681,11 @@
     width: 100%;
     padding-top: 16px;
   }
+
+  .segundo{ 
+    color: #EDF1F7;
+
+  }
   
   .navbar {
     max-width: 1240px;
@@ -656,7 +731,7 @@
   }
   
   #logo {
-    max-width: 88px;
+    max-width: 60px;
   }
   
   .nav-list li:last-child a {
@@ -727,20 +802,20 @@
             align-items: center;
   }
   
-  .nav-social svg {
+  .nav-social img {
     cursor: pointer;
     margin-left: 16px;
-    width: 24px;
+    width: 39px;
   }
   
-  .nav-social svg path,
-  .nav-social svg circle {
+  .nav-social img path
+  .nav-social img circle {
     -webkit-transition: 0.7s ease;
     transition: 0.7s ease;
   }
   
-  .nav-social svg:hover path,
-  .nav-social svg:hover circle {
+  .nav-social img:hover path,
+  .nav-social img:hover circle {
     fill: #AA21D3;
     -webkit-transform: translate3d(0, -2px, 0);
             transform: translate3d(0, -2px, 0);
