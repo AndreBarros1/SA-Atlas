@@ -15,11 +15,11 @@ div#wapper {
   width: inherit;
 }
 div#wapper div.auth-background {
-  background: url(img/teste.jpg);
+  background: url(../img/galaxy.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  filter: blur(4px);
+  /* filter: blur(2px); */
   height: 100%;
   width: 100%;
   position: absolute;
@@ -36,7 +36,7 @@ div#wapper div.panel-auth {
 div#wapper div.panel-auth h2 {
   font-family: "KoHo";
   text-align: center;
-  color: #353b48;
+  color: #ffffff;
   font-size: 24pt;
   margin-bottom: 0;
 }
@@ -85,7 +85,7 @@ div#wapper div.panel-auth form div input {
 }
 div#wapper div.panel-auth form button {
   color: #f0f0f0;
-  background-color: #AA21D3;
+  background-color: #673FC7;
   border: 0;
   cursor: pointer;
   height: 40px;
@@ -94,7 +94,7 @@ div#wapper div.panel-auth form button {
 div#wapper div.panel-auth form button:hover {
   animation: hoverAnimate;
   animation-duration: 1s;
-  background-color: #353b48;
+  background-color: #913fc7;
   letter-spacing: 1px;
 }
 div#wapper div.content {
@@ -130,6 +130,7 @@ div#wapper div.content article h4 {
 }
 
 a {
+  color: white;
   margin-left: 15px;
   margin-bottom: 1pc;
 }

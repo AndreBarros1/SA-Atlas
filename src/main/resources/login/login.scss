@@ -52,6 +52,7 @@ div#wapper {
     p{
       text-align:center;
       margin-top: 0;
+      color: #fff;
     }
     form {
       display: flex;
@@ -82,6 +83,7 @@ div#wapper {
 
            input {
            outline: none;
+            color: #ddd;
             border: 1px solid #ddd;
             border-radius:40px;
             border-top-left-radius:  0;
