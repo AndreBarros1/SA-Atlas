@@ -11,6 +11,10 @@ import java.util.Set;
 @Entity
 public class Social {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
     @Size(max = 100)
     @NotNull
     private String nome;
