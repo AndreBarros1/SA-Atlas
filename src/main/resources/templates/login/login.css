@@ -146,6 +146,11 @@ a {
   }
 }
 
+
+::-webkit-scrollbar {
+  display: none;
+  }
+
 .esquece{
     color: #fff;
 }

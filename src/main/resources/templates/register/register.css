@@ -14,6 +14,7 @@ div#wapper {
   background-color: #000;
   width: inherit;
 }
+
 div#wapper div.auth-background {
   background: url(../img/galaxy.jpg);
   background-repeat: no-repeat;
@@ -149,5 +150,10 @@ a {
 .esquece{
     color: #fff;
 }
+
+
+::-webkit-scrollbar {
+  display: none;
+  }
 
 /*# sourceMappingURL=master.css.map */
