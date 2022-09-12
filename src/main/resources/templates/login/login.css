@@ -15,7 +15,7 @@ div#wapper {
   width: inherit;
 }
 div#wapper div.auth-background {
-  background: url(../img/teste.jpg);
+  background: url(/src/main/resources/static/img/teste.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;

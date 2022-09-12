@@ -16,7 +16,7 @@ div#wapper {
 }
 
 div#wapper div.auth-background {
-  background: url(../img/galaxy.jpg);
+  background: url(/src/main/resources/static/img/galaxy.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
