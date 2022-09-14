@@ -586,6 +586,17 @@
     transition: 0.4s ease-out;
   }
 
+  .rightt{
+    max-width: 90vh;
+    background-color: yellow;
+    margin-left: 69%;
+    margin-top: -40%;
+    width: 25vw;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+  }
+
   .title {
     color: white;
     font-weight: 300;
@@ -792,11 +803,6 @@
     overflow: hidden;
   }
 
-  .logo-spiderman {
-    fill: transparent;
-    -webkit-animation: logo-spiderman 12s ease;
-            animation: logo-spiderman 12s ease;
-  }
 
   @-webkit-keyframes logo-spiderman {
     0% {
@@ -1045,3 +1051,7 @@
     color:#aaa;
     margin-bottom:0;
   }
+
+
+
+  
