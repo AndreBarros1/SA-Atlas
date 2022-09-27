@@ -588,7 +588,7 @@
 
   .rightt{
     max-width: 90vh;
-    background-color: yellow;
+    background-color: #0A0C10;
     margin-left: 69%;
     margin-top: -40%;
     width: 25vw;
@@ -1050,8 +1050,4 @@
     font-size:13px;
     color:#aaa;
     margin-bottom:0;
-  }
-
-
-
-  
+  } 
