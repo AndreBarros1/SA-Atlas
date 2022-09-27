@@ -1,6 +1,9 @@
+
+
 *{
     margin:0;
     padding:0;
+    font-family: 'Mukta', sans-serif;
 }
 .container{
     min-height:80vh;
@@ -10,7 +13,15 @@
     background-color:#000000;
 }
 
-.container::before{
+.container1{
+  min-height:65vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-color:#0f0f0f;
+}
+
+/* .container::before{
 
     content:'';
     position:absolute;
@@ -20,7 +31,7 @@
     background-color:#0A0C10;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 
-}
+} */
 .card{
     height:350px;
     width:320px;
@@ -29,8 +40,21 @@
     position:relative;
     overflow:hidden;
     cursor:pointer;
-
 }
+
+.card1{
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 0%;
+  height:350px;
+  width:300px;
+  background-color:rgb(55, 24, 65);
+  border-radius:10px;
+  position:relative;
+  overflow:hidden;
+  cursor:pointer;
+}
+
 .overlay {
     position: absolute;
     top: 0;
@@ -406,3 +430,4 @@ img, svg {
   color:#aaa;
   margin-bottom:0;
 } */
+
