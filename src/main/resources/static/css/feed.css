@@ -186,5 +186,7 @@ header {
 
   .card-title{
     margin-top: 60px;
-    margin-left: 38%;
+    margin-left: 35%;
+    font-style: italic;
+    font-size: 20px;
   }
