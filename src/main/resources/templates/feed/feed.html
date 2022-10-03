@@ -13,9 +13,16 @@
     <link rel="icon" href="/src/main/resources/static/img/brnc.png">
 
     
+     <!-- Link Swiper's CSS -->
+     <link
+     rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <!-- Demo styles -->
+
 </head>    
 <body>
 
+  
     <header>
         <nav class="navbar">
             <div class="nav-menu">
@@ -43,22 +50,36 @@
         </nav>
     </header>
 
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">Kalani</div>
+        <div class="swiper-slide">André</div>
+        <div class="swiper-slide">Breno</div>
+        <div class="swiper-slide">Thiago</div>
+        <div class="swiper-slide">Eduardo</div>
+        <div class="swiper-slide">Christian</div>
+        <div class="swiper-slide">Artur</div>
+        <div class="swiper-slide">Fernandes</div>
+        <div class="swiper-slide">Pedro</div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
     
-        <div class="card" style="width: 25rem; height: 30rem;">
-          <img class="card-img-top" src="../../static/img/capa.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Kalani</h5>
-            <p class="card-text">Espaço aonde o dono ira fazer uma breve descrição sobre a sua postagem.</p>
-            <a href="http://127.0.0.1:5500/src/main/resources/templates/profile/profile.html" class="btnpe">Visitar perfil</a>
-          </div>
-        </div>
+    <div class="card" style="width: 25rem; height: 30rem;">
+      <img class="card-img-top" src="../../static/img/testeeee.png" alt="Card image cap"> <!-- CAPA DO PORTFÓLIO -->
+      <div class="card-body">
+     <h5 class="card-title">Kalani</h5>      <!-- NOME DA PESSOA QUE POSTOU O PERFIL -->
+        <p class="card-text">Espaço aonde o dono ira fazer uma breve descrição sobre a sua postagem.</p> <!-- DESCRIÇÃO -->
+        <a href="http://127.0.0.1:5500/src/main/resources/templates/profile/profile.html" class="btnpe">Visitar perfil</a>
+      </div>
+    </div>
 
         
         <div class="card" style="width: 25rem; height: 30rem;">
-          <img class="card-img-top" src="../../static/img/capa.jpg" alt="Card image cap">
+          <img class="card-img-top" src="../../static/img/testeeee.png" alt="Card image cap"> <!-- CAPA DO PORTFÓLIO -->
           <div class="card-body">
-            <h5 class="card-title">Breno</h5>
-            <p class="card-text">Espaço aonde o dono ira fazer uma breve descrição sobre a sua postagem.</p>
+         <h5 class="card-title">Breno</h5>      <!-- NOME DA PESSOA QUE POSTOU O PERFIL -->
+            <p class="card-text">Espaço aonde o dono ira fazer uma breve descrição sobre a sua postagem.</p> <!-- DESCRIÇÃO -->
             <a href="http://127.0.0.1:5500/src/main/resources/templates/profile/profile.html" class="btnpe">Visitar perfil</a>
           </div>
         </div>
@@ -108,5 +129,18 @@
           </div>
         </div>
         
+ <!-- Swiper JS -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
+ <!-- Initialize Swiper -->
+ <script>
+   var swiper = new Swiper(".mySwiper", {
+     slidesPerView: 3,
+     spaceBetween: 30,
+     pagination: {
+       el: ".swiper-pagination",
+       clickable: true,
+     },
+   });
+ </script>
 </body>
