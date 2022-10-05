@@ -2,16 +2,33 @@
   margin:0;
   padding:0;
   font-family: 'Mukta', sans-serif;
+  background-color: #0A0C10;
+  color: rgb(155, 154, 154);
 }
 
 body {
-    background: rgb(99, 39, 120)
+  margin: 0;
+  background-color: #0A0C10; 
+  -webkit-text-size-adjust: 100%; 
+  -webkit-tap-highlight-color: rgba(black, 0);
+}
+
+
+.btn-primary {
+  color: #fff;
+  background-color: #fd0dfd;
+  border-color: #e10dfd;
+}
+
+.container-rounded{
+background-color: #0A0C10;
 }
 
 .form-control:focus {
     box-shadow: none;
-    border-color: #BA68C8
+    border-color: #BA68C8;
 }
+
 
 .profile-button {
     background: rgb(99, 39, 120);
@@ -45,6 +62,17 @@ body {
 .font-weight-bold{
   margin-top: 10%;
 }
+body {
+  margin: 0;
+  font-family: var(--bs-font-sans-serif);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: rgb(0, 0, 0);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
 
 .add-experience:hover {
     background: #BA68C8;
@@ -56,6 +84,7 @@ body {
 header {
     width: 100%;
     padding-top: 16px;
+    background-color: #0A0C10;
   }
 
   .segundo{
@@ -63,6 +92,10 @@ header {
     text-align: center;
 
   }
+
+.text-right{
+  color: #fff;
+}
 
   .navbar {
     max-width: 1240px;
@@ -112,7 +145,7 @@ header {
   }
 
   .nav-list li:last-child a {
-    color: #000000;
+    color: #959698;
   }
 
   .nav-link {
@@ -122,11 +155,19 @@ header {
     letter-spacing: 2px;
     font-weight: 200;
     text-transform: uppercase;
-    color: #000000;
+    color: #959698;
     padding: 8px 16px;
     -webkit-transition: 0.7s ease;
     transition: 0.7s ease;
     position: relative;
+  }
+
+  .form-control{
+    background-color: #0A0C10;
+  }
+
+  .row{
+    background-color: #0A0C10;
   }
 
   .nav-link::after {
@@ -146,7 +187,7 @@ header {
   }
 
   .nav-link:hover {
-    color: #000000;
+    color: #959698;
   }
 
   .nav-link:hover::after {
