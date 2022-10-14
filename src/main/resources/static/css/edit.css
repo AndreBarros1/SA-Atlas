@@ -2,8 +2,8 @@
   margin:0;
   padding:0;
   font-family: 'Mukta', sans-serif;
-  background-color: #0A0C10;
-  color: rgb(155, 154, 154);
+  background-color: #fff;
+  color: rgb(0, 0, 0);
 }
 
 body {
@@ -84,7 +84,7 @@ body {
 header {
     width: 100%;
     padding-top: 16px;
-    background-color: #0A0C10;
+    background-color: #fff;
   }
 
   .segundo{
@@ -155,7 +155,7 @@ header {
     letter-spacing: 2px;
     font-weight: 200;
     text-transform: uppercase;
-    color: #959698;
+    color: black;
     padding: 8px 16px;
     -webkit-transition: 0.7s ease;
     transition: 0.7s ease;
@@ -167,7 +167,7 @@ header {
   }
 
   .row{
-    background-color: #0A0C10;
+    background-color: #fff;
   }
 
   .nav-link::after {
@@ -182,12 +182,12 @@ header {
     transition: 0.7s ease;
     -webkit-transform: translate3d(-15%, 0, 0);
             transform: translate3d(-15%, 0, 0);
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(226, 29, 34, 0)), to(#AA21D3));
-    background: linear-gradient(180deg, rgba(226, 29, 34, 0) 0%, #AA21D3 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(226, 29, 34, 0)), to(#EE6724));
+    background: linear-gradient(180deg, rgba(226, 29, 34, 0) 0%, #EE6724 100%);
   }
 
   .nav-link:hover {
-    color: #959698;
+    color: #fff;
   }
 
   .nav-link:hover::after {

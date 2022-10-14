@@ -6,6 +6,10 @@
     font-family: 'Mukta', sans-serif;
   }
 
+  *::marker{
+    opacity: 0%;
+  }
+
   .m-1 {
     margin: 8px;
   }
@@ -135,6 +139,7 @@
     margin-top: 8px;
     margin-bottom: 8px;
   }
+  
 
   .my-2 {
     margin-left: 80px;
@@ -406,7 +411,7 @@
 
   p {
     font-size: 16px;
-    color: #BF8136;
+    color: rgb(0, 0, 0);
     letter-spacing: 1px;
     line-height: 140%;
   }
@@ -441,7 +446,7 @@
   }
 
   #containerr {
-    background-color: #000000;
+    background-color: #b79d78;
     max-width: 100%;
     max-height: fill;
     margin: 0 auto;
@@ -841,6 +846,7 @@
   header {
     width: 100%;
     padding-top: 16px;
+    background-color: #0B5E6C;
   }
 
   .segundo{
@@ -897,7 +903,7 @@
   }
 
   .nav-list li:last-child a {
-    color: #959698;
+    color: rgb(255, 255, 255);
   }
 
   .nav-link {
@@ -907,7 +913,7 @@
     letter-spacing: 2px;
     font-weight: 200;
     text-transform: uppercase;
-    color: #959698;
+    color: rgb(255, 255, 255);
     padding: 8px 16px;
     -webkit-transition: 0.7s ease;
     transition: 0.7s ease;
@@ -926,8 +932,8 @@
     transition: 0.7s ease;
     -webkit-transform: translate3d(-15%, 0, 0);
             transform: translate3d(-15%, 0, 0);
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(226, 29, 34, 0)), to(#AA21D3));
-    background: linear-gradient(180deg, rgba(226, 29, 34, 0) 0%, #AA21D3 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(226, 29, 34, 0)), to(#EE6724));
+    background: linear-gradient(180deg, rgba(226, 29, 34, 0) 0%, #EE6724 100%);
   }
 
   .nav-link:hover {

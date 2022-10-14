@@ -16,8 +16,9 @@ div#wapper {
 }
 
 div#wapper div.auth-background {
-  background: url(/src/main/resources/static/img/leite.jpg);
+  background: url(/src/main/resources/static/img/por-do-sol2.jpg);
   background-repeat: no-repeat;
+  opacity: 69%;
   background-size: cover;
   background-attachment: fixed;
   /* filter: blur(2px); */
@@ -42,7 +43,7 @@ div#wapper div.panel-auth h2 {
   margin-bottom: 0;
 }
 div#wapper div.panel-auth h2 span {
-  color: #aa0f95;
+  color: #e2851b;
 }
 div#wapper div.panel-auth p {
   text-align: center;
@@ -87,7 +88,7 @@ div#wapper div.panel-auth form div input {
 }
 div#wapper div.panel-auth form button {
   color: #f0f0f0;
-  background-color: #673FC7;
+  background-color: #0B5E6C;
   border: 0;
   cursor: pointer;
   height: 40px;
@@ -96,7 +97,7 @@ div#wapper div.panel-auth form button {
 div#wapper div.panel-auth form button:hover {
   animation: hoverAnimate;
   animation-duration: 1s;
-  background-color: #913fc7;
+  background-color: #0B5E6C;
   letter-spacing: 1px;
 }
 div#wapper div.content {

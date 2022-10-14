@@ -10,7 +10,7 @@
     display:flex;
     justify-content:center;
     align-items:center;
-    background-color:#000000;
+    background-color:#F2D6B3;
 }
 
 .container1{
@@ -18,7 +18,7 @@
   display:flex;
   justify-content:center;
   align-items:center;
-  background-color:#0A0C10;
+  background-color:black;
 }
 
 /* .container::before{
@@ -48,7 +48,7 @@
   margin-top: 0%;
   height:350px;
   width:300px;
-  background-color:rgb(55, 24, 65);
+  background-color:rgb(10,10,10);
   border-radius:10px;
   position:relative;
   overflow:hidden;
@@ -82,7 +82,7 @@
 
     height:120px;
     width:100%;
-    background-image: linear-gradient(to right,#A01FC6,#5c0074);;
+    background-image: linear-gradient(to right,#EE6724,rgb(151, 59, 12));;
 }
 
 .fa-pencil-square-o{
@@ -128,7 +128,7 @@ transition:all 0.5s;
 
 } */
 .plusred{
-    color:purple !important;
+    color:rgb(255, 255, 255) !important;
 }
 
 
@@ -174,7 +174,7 @@ transition:all 0.5s;
 }
 .social{
     margin-left:15px;
-    color:purple;
+    color:#021419;
     position:relative;
 }
 .social i:nth-child(1){
@@ -231,7 +231,7 @@ transition:all 0.5s;
 }
 
 header {
-  background-color:#000000;
+  background-color:#0B5E6C;
   width: 100%;
   padding-top: 16px;
 }
@@ -294,7 +294,7 @@ header {
 }
 
 .nav-list li:last-child a {
-  color: #959698;
+  color: #ffffff;
 }
 
 .nav-link {
@@ -304,7 +304,7 @@ header {
   letter-spacing: 2px;
   font-weight: 200;
   text-transform: uppercase;
-  color: #959698;
+  color: #ffffff;
   padding: 8px 16px;
   -webkit-transition: 0.7s ease;
   transition: 0.7s ease;
@@ -323,8 +323,8 @@ header {
   transition: 0.7s ease;
   -webkit-transform: translate3d(-15%, 0, 0);
           transform: translate3d(-15%, 0, 0);
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(226, 29, 34, 0)), to(#AA21D3));
-  background: linear-gradient(180deg, rgba(226, 29, 34, 0) 0%, #AA21D3 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(226, 29, 34, 0)), to(#EE6724));
+  background: linear-gradient(180deg, rgba(226, 29, 34, 0) 0%, #EE6724 100%);
 }
 
 .nav-link:hover {

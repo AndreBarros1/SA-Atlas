@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #0A0C10 ;
+    background-color: #F2D6B3 ;
 }
 
 .feedp{
@@ -24,6 +24,7 @@ body{
 header {
     width: 100%;
     padding-top: 16px;
+    background-color: #0B5E6C;
   }
 
   .segundo{
@@ -80,7 +81,7 @@ header {
   }
 
   .nav-list li:last-child a {
-    color: #959698;
+    color: #ffffff;
   }
 
   .nav-link {
@@ -90,7 +91,7 @@ header {
     letter-spacing: 2px;
     font-weight: 200;
     text-transform: uppercase;
-    color: #959698;
+    color: #ffffff;
     padding: 8px 16px;
     -webkit-transition: 0.7s ease;
     transition: 0.7s ease;
@@ -109,12 +110,12 @@ header {
     transition: 0.7s ease;
     -webkit-transform: translate3d(-15%, 0, 0);
             transform: translate3d(-15%, 0, 0);
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(226, 29, 34, 0)), to(#AA21D3));
-    background: linear-gradient(180deg, rgba(226, 29, 34, 0) 0%, #AA21D3 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(226, 29, 34, 0)), to(#EE6724));
+    background: linear-gradient(180deg, rgba(226, 29, 34, 0) 0%, #EE6724 100%);
   }
 
   .nav-link:hover {
-    color: #F4F7FB;
+    color: n;
   }
 
   .nav-link:hover::after {
@@ -220,7 +221,7 @@ header {
   .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: rgb(141, 11, 130);
+    background: rgb(175, 75, 8);
     color: #fff;
 
 
