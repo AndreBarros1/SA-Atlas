@@ -145,7 +145,7 @@ header {
   }
 
   .nav-list li:last-child a {
-    color: #959698;
+    color: #000000;
   }
 
   .nav-link {
@@ -187,7 +187,7 @@ header {
   }
 
   .nav-link:hover {
-    color: #fff;
+    color: rgb(0, 0, 0);
   }
 
   .nav-link:hover::after {
