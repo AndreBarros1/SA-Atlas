@@ -593,9 +593,9 @@
 
   .rightt{
     max-width: 90vh;
-    background-color: #F2D6B3;
+    background-color: rgba(175, 103, 14, 0);
     margin-left: 69%;
-    margin-top: -40%;
+    margin-top: -30%;
     width: 25vw;
     height: 85vh;
     display: flex;
@@ -725,7 +725,7 @@
   }
 
   .btn-secondary {
-    color: white;
+    color: #EE6724;
     display: inline-block;
     padding: 10px 32px;
     border-radius: 3px;
