@@ -1,35 +1,35 @@
 package br.atlas.service.contatos_service;
 
 
-import br.atlas.model.Contatos;
-import br.atlas.repository.ContatosRepo;
+import br.atlas.model.Esqc;
+import br.atlas.repository.EsqcRepo;
 
 import java.util.List;
 import java.util.Optional;
 
 public class ContatosServiceImpl implements ContatosService{
 
-    private final ContatosRepo contatosRepo;
+    private final EsqcRepo contatosRepo;
 
-    public ContatosServiceImpl(ContatosRepo contatosRepo) {
+    public ContatosServiceImpl(EsqcRepo contatosRepo) {
         this.contatosRepo = contatosRepo;
     }
 
 
     @Override
-    public Contatos createContatos(Contatos newContatos) {
+    public Esqc createContatos(Esqc newEsqc) {
 
         try{
-            contatosRepo.save(newContatos);
+            contatosRepo.save(newEsqc);
         }
         catch (Exception e){
             throw new IllegalArgumentException("Erro ao criar Contato, tente Novamente.");
         }
-        return newContatos;
+        return newEsqc;
     }
 
     @Override
-    public List<Contatos> findAllContatos() {
+    public List<Esqc> findAllContatos() {
         return contatosRepo.findAll();
     }
 
@@ -37,7 +37,7 @@ public class ContatosServiceImpl implements ContatosService{
     public void deleteContatos(Long id) {
 
         try {
-            Optional<Contatos> contatos_data = contatosRepo.findById(id);
+            Optional<Esqc> contatos_data = contatosRepo.findById(id);
             if (contatos_data.isEmpty()){
                 throw new IllegalArgumentException("Contato Inexistente");
             }
@@ -49,15 +49,15 @@ public class ContatosServiceImpl implements ContatosService{
     }
 
     @Override
-    public Contatos updateContatos(Long id, Contatos updatedContatos) {
+    public Esqc updateContatos(Long id, Esqc updatedEsqc) {
         try{
-            Optional<Contatos> contatos_data = contatosRepo.findById(id);
+            Optional<Esqc> contatos_data = contatosRepo.findById(id);
             if(contatos_data.isEmpty()){
                 throw new IllegalArgumentException("Contato Inexistente");
             }
-            contatos_data.get().setNome(updatedContatos.getNome());
-            contatos_data.get().setEmail(updatedContatos.getEmail());
-            contatos_data.get().setTelefone(updatedContatos.getTelefone());
+            contatos_data.get().setNome(updatedEsqc.getNome());
+            contatos_data.get().setEmail(updatedEsqc.getEmail());
+            contatos_data.get().setTelefone(updatedEsqc.getTelefone());
             contatosRepo.save(contatos_data.get());
 
         }
@@ -66,7 +66,7 @@ public class ContatosServiceImpl implements ContatosService{
         }
 
 
-        return updatedContatos;
+        return updatedEsqc;
     }
 
 

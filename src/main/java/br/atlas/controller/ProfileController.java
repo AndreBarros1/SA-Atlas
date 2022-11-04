@@ -1,12 +1,13 @@
 package br.atlas.controller;
 
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class IndexController {
-    @GetMapping("/")
-    public String index() {
-        return "/home/index";
-    }
+public class ProfileController {
+
+    @GetMapping
+    public String profile(){
+        return "/home/profile";}
 }

@@ -1,17 +1,17 @@
 package br.atlas.service.user_service;
 
-import br.atlas.model.Usuario;
+import br.atlas.model.Register;
 
 import java.util.List;
 
 public interface UsuarioService {
 
-    public Usuario createUsuario(Usuario newUser);
+    public Register createUsuario(Register newUser);
 
-    public List<Usuario> findAllUsuarios();
+    public List<Register> findAllUsuarios();
 
     public void deleleUsuario(Long deletedId);
 
-    public Usuario updateUsuario(Long id, Usuario updatedUsuario);
+    public Register updateUsuario(Long id, Register updatedRegister);
 
 }

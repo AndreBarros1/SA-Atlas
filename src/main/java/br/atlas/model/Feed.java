@@ -9,7 +9,7 @@ import javax.validation.constraints.Size;
 import java.util.Set;
 
 @Entity
-public class Social {
+public class Feed {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,11 +21,11 @@ public class Social {
 
     @OneToMany(mappedBy = "social")
     @JsonManagedReference
-    private Set<Usuario> user_list;
+    private Set<Register> user_list;
 
     @OneToMany(mappedBy = "social")
     @JsonManagedReference
-    private Set<Contatos> contatos_list;
+    private Set<Esqc> esqc_list;
 
     @ManyToMany
     @JoinTable(
@@ -33,7 +33,7 @@ public class Social {
             joinColumns = @JoinColumn(name = "post_id"),
             inverseJoinColumns = @JoinColumn(name = "social_id")
     )
-    private Set<Post> post_list;
+    private Set<Po st> post_list;
 
     public String getNome() {
         return nome;
@@ -43,36 +43,30 @@ public class Social {
         this.nome = nome;
     }
 
-    public Set<Usuario> getUser_list() {
+    public Set<Register> getUser_list() {
         return user_list;
     }
 
-    public void setUser_list(Set<Usuario> user_list) {
+    public void setUser_list(Set<Register> user_list) {
         this.user_list = user_list;
     }
 
-    public Set<Contatos> getContatos_list() {
-        return contatos_list;
+    public Set<Esqc> getEsqueceu_list() {
+        return esqc_list;
     }
 
-    public void setContatos_list(Set<Contatos> contatos_list) {
-        this.contatos_list = contatos_list;
+    public void setEsqueceu_list(Set<Esqc> esqc_list) {
+        this.esqc_list = esqc_list;
     }
 
-    public Set<Post> getPost_list() {
-        return post_list;
-    }
 
-    public void setPost_list(Set<Post> post_list) {
-        this.post_list = post_list;
-    }
 
     @Override
     public String toString() {
         return "Social{" +
                 "nome='" + nome + '\'' +
                 ", user_list=" + user_list +
-                ", contatos_list=" + contatos_list +
+                ", esqueceu_list=" + esqc_list +
                 ", post_list=" + post_list +
                 '}';
     }

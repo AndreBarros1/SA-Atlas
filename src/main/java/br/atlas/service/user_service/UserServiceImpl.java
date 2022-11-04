@@ -1,8 +1,8 @@
 package br.atlas.service.user_service;
 
 
-import br.atlas.model.Usuario;
-import br.atlas.repository.UsuarioRepo;
+import br.atlas.model.Register;
+import br.atlas.repository.LoginRepo;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -11,20 +11,20 @@ import java.util.Optional;
 @Service
 public class UserServiceImpl implements UsuarioService{
 
-    private final UsuarioRepo usuarioRepo;
+    private final LoginRepo LoginRepo;
 
-    public UserServiceImpl(UsuarioRepo usuarioRepo) {
-        this.usuarioRepo = usuarioRepo;
+    public UserServiceImpl(LoginRepo LoginRepo) {
+        this.LoginRepo = LoginRepo;
     }
 
     @Override
-    public Usuario createUsuario(Usuario newUser) {
+    public Register createUsuario(Register newUser) {
         try{
-            Usuario user_data = usuarioRepo.findUsuarioByUsername(newUser.getUsername());
+            Register user_data = LoginRepo.findUsuarioByUsername(newUser.getUsername());
             if(user_data != null){
                 throw new IllegalArgumentException("Erro ao criar Usuário, tente novamente");
             }
-            usuarioRepo.save(newUser);
+            LoginRepo.save(newUser);
         }
         catch (Exception e){
             throw new IllegalArgumentException("Usuário Inexistente");
@@ -33,19 +33,19 @@ public class UserServiceImpl implements UsuarioService{
     }
 
     @Override
-    public List<Usuario> findAllUsuarios() {
-        return usuarioRepo.findAll();
+    public List<Register> findAllUsuarios() {
+        return LoginRepo.findAll();
     }
 
     @Override
     public void deleleUsuario(Long deletedId) {
         try{
-            Optional<Usuario> user_data = usuarioRepo.findById(deletedId);
+            Optional<Register> user_data = LoginRepo.findById(deletedId);
 
             if (user_data.isEmpty()){
                 throw new IllegalArgumentException("Usuário Inexistente");
             }
-            usuarioRepo.delete(user_data.get());
+            LoginRepo.delete(user_data.get());
         }
         catch (Exception e){
             throw new IllegalArgumentException("Tente Novamente");
@@ -53,19 +53,18 @@ public class UserServiceImpl implements UsuarioService{
     }
 
     @Override
-    public Usuario updateUsuario(Long id, Usuario updatedUsuario) {
+    public Register updateUsuario(Long id, Register updatedRegister) {
         try{
-            Optional<Usuario> user_data = usuarioRepo.findById(id);
+            Optional<Register> user_data = LoginRepo.findById(id);
             if (user_data.isEmpty()){
                 throw new IllegalArgumentException("Usuário Inexistente");
             }
 
-            user_data.get().setUsername(updatedUsuario.getUsername());
-            user_data.get().setEmail(updatedUsuario.getEmail());
-            user_data.get().setPassword(updatedUsuario.getPassword());
+            user_data.get().setUsername(updatedRegister.getUsername());
+            user_data.get().setPassword(updatedRegister.getPassword());
 
 
-            return usuarioRepo.save(user_data.get());
+            return LoginRepo.save(user_data.get());
         }
         catch (Exception e){
             throw new IllegalArgumentException("Tente Novamente");

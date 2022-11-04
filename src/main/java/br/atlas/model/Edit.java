@@ -1,6 +1,5 @@
 package br.atlas.model;
 
-
 import com.fasterxml.jackson.annotation.JsonBackReference;
 
 import javax.persistence.*;
@@ -8,7 +7,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 @Entity
-public class Usuario {
+public class Edit {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,14 +22,12 @@ public class Usuario {
     @NotNull
     private String password;
 
-    @Size(max = 100)
-    @NotNull
-    private String email;
+
 
     @ManyToOne
     @JoinColumn(name = "social_id", nullable = true)
     @JsonBackReference
-    private Social social;
+    private Feed feed;
 
     public Long getId() {
         return id;
@@ -56,16 +53,10 @@ public class Usuario {
         this.password = password;
     }
 
-    public String getEmail() {
-        return email;
-    }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
 
-    public Social getSocial() {
-        return social;
+    public Feed getSocial() {
+        return feed;
     }
 
     @Override
@@ -74,8 +65,8 @@ public class Usuario {
                 "id=" + id +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
-                ", email='" + email + '\'' +
-                ", social=" + social +
+                ", social=" + feed +
                 '}';
+
     }
 }

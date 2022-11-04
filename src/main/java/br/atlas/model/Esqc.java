@@ -7,7 +7,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 @Entity
-public class Contatos {
+public class Esqc {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -28,7 +28,7 @@ public class Contatos {
     @ManyToOne
     @JoinColumn(name = "social_id", nullable = true)
     @JsonBackReference
-    private Social social;
+    private Feed feed;
 
     public Long getId() {
         return id;
@@ -62,8 +62,8 @@ public class Contatos {
         this.telefone = telefone;
     }
 
-    public Social getSocial() {
-        return social;
+    public Feed getSocial() {
+        return feed;
     }
 
 
@@ -75,7 +75,7 @@ public class Contatos {
                 ", email='" + email + '\'' +
                 ", nome='" + nome + '\'' +
                 ", telefone='" + telefone + '\'' +
-                ", social=" + social +
+                ", social=" + feed +
                 '}';
     }
 }

@@ -1,17 +1,17 @@
 package br.atlas.service.contatos_service;
 
-import br.atlas.model.Contatos;
+import br.atlas.model.Esqc;
 
 import java.util.List;
 
 public interface ContatosService {
 
-    public Contatos createContatos(Contatos newContatos);
+    public Esqc createContatos(Esqc newEsqc);
 
-    public List<Contatos> findAllContatos();
+    public List<Esqc> findAllContatos();
 
     public void deleteContatos(Long id);
 
-    public Contatos updateContatos(Long id, Contatos updatedContatos);
+    public Esqc updateContatos(Long id, Esqc updatedEsqc);
 
 }

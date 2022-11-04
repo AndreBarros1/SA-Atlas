@@ -1,7 +1,5 @@
 package br.atlas.service.post_service;
 
-import br.atlas.model.Post;
-
 import java.util.List;
 
 public interface PostService {

@@ -1,12 +1,11 @@
 package br.atlas.repository;
 
 
-import br.atlas.model.Usuario;
+import br.atlas.model.Feed;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface UsuarioRepo extends JpaRepository<Usuario, Long> {
+public interface FeedRepo extends JpaRepository<Feed, Long> {
 
-    public Usuario findUsuarioByUsername(String username);
 }
